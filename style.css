@@ -1,0 +1,227 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font family: sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    height:100vh;
+    width:100%;
+    background-image:url(kart.jpg);
+
+
+    background-size:cover;
+    background-position: center;
+    color: rgb(76, 18, 18);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 10%;
+    padding-right: 8%;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding:10px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:antiquewhite;
+    transition:0.5s;
+}
+.content{
+    position: absolute;
+    top:20%;
+    left:55%;
+    color:rgba(0, 0, 0, 0.616)
+}
+.about{
+   
+    background-color:beige;
+    width: 100%;
+    padding: 0px 0px;
+}
+.main{
+    width: 2000px;
+    display:flex;
+    margin: 0 auto;
+    align-items:center;
+    justify-content:right;
+    height:100vh;
+    width:100%;
+    
+
+}
+.about-text h2{
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    text-transform: capitalize;
+    margin-left: 20px;
+    
+}
+.about-text h4{
+    color:rgb(56, 36, 56);
+    font-size: 22px;
+    letter-spacing 2px;
+    margin-bottom: 20px;
+    text-transform:capitalize;
+    align-items: center;
+
+}
+.about-text p{
+    color:rgb(33, 9, 248) ;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+button{
+    background-color:rgb(219, 226, 211);
+    color: rgb(14, 16, 11);
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight:bolder;
+    padding:13px 15px;
+    border-radius: 20px;
+}
+.stocks{
+    background-color:rgb(226, 226, 174);
+    text-align: center;
+    padding:0px 0px;
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.container {
+    display: flex;
+    gap: 50px;
+    animation: scroll 30s linear infinite;
+}
+.stocks h1{
+    color: rgb(145, 60, 60);
+}
+.card{
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card:nth-child(odd){
+   background:linear-gradient(rgba(181, 183, 149, 0.813),pink)
+}
+.card:nth-child(even){
+    background:linear-gradient(rgb(108, 110, 152),rgb(211, 178, 184))
+ }
+ @keyframes scroll{
+    0%{
+        transform:translate(0);
+    }
+    100%{
+         transform:translatex(calc(-250px * 2)); 
+    }
+  
+ }
+ .items{
+    display: flex;
+    height: 80vh;
+    background-color:darkgray;
+    
+ }
+
+ .items h1{
+   color: rgb(0, 0, 0);
+   text-align:center   
+ }
+   
+ .order {
+    display: flex;
+    min-height: 100px;
+    align-items:center;
+    justify-content: center;
+ }
+ .text{
+    height: 360px;
+    width: 330px;
+    padding: 20px 30px;
+    background-color:cyan;
+    margin: 15px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ .box h5{
+ font-size: 30px;
+ margin-bottom: 20px;
+ }
+.box p{
+    line-height: 16px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.contact{
+    color: rgb(228, 10, 10);
+    background-color: beige;
+    height: 70vh;
+    width: 100%;
+}
+.contact-box{
+    display: flex ;
+    background-color: rgba(32, 36, 19, 0.619);
+}
+.contact-left{
+    flex-basis: 60%;
+    color:rgb(27, 20, 34);
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: rgb(175, 219, 127);
+}
+.contact h1{
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(34, 34, 40);
+}
+.contact-left input{
+   color: blueviolet;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+.input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+textarea{
+    width: 90%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+label{
+    margin-bottom: 5px;
+    display: block;
+    color: #fff;
+}
+tr td:first-child{
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
